@@ -1,0 +1,24 @@
+.container_small-card{
+    display:flex;
+    color:#fff;
+    padding: 50px 50px 25px 0;
+    gap:10px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+    max-width:90%;
+}
+
+.img{
+    width:45%;
+}
+
+.text{
+    color:gray;
+    font-size:9px;
+    font-family: Cursive;
+}
+
+.description{
+    margin-top:10px;
+    font-family: Verdana;
+    width:120%
+}

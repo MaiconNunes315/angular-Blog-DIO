@@ -1,0 +1,37 @@
+.container-card{
+    display:flex;
+}
+
+.container_big-card{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:50px;
+    color:gray;
+    gap:10px;
+    
+}
+
+.img{
+    width:90%;
+    
+
+}
+
+.date{
+    font-size:9px;
+    font-family: Cursive;
+}
+
+.text{
+    width:80%;
+}
+
+.title{
+    color:#fff;
+    font-family: Verdana;
+}
+
+.container_small-card{
+   flex:1;
+}

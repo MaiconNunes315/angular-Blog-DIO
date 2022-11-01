@@ -14,3 +14,6 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+export const API_NEWS = 'https://newsapi.org/v2/top-headlines?country='
+export const API_KEY = '327ef7208850494eacef46deef5549e2'
