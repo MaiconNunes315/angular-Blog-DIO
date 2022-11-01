@@ -1,20 +1,27 @@
 <div class="container-card">
 
-<main class="container_big-card">
-    <img class="img" src="http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png" alt=""/>
+
+
+<main ngbSlide *ngFor="let item of news; index as i" class="container_big-card">
+    <img class="img" [src]="item.urlToImage" alt=""/>
     
     <div class="date">
         <span>Junho </span>
         <span>01, 2022</span>
     </div>
 
-    <h1 class="text title">Lorem ipsum dolor sit amet consectetur, adi</h1>
+    <a [href]="item.url">
+    <h1 class="text title">{{item.title}}</h1>
 
-    <p class="text description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae quos optio fugit alias corporis ducimus, repellendus blanditiis impedit ex. Dolores impedit explicabo corrupti fuga accusamus maiores sapiente doloribus odio!</p>
+    <p class="text description">{{item.description}}</p>
+    </a>
+    
 </main>
+
 
 <div class="container_small-card">
     <app-small-card></app-small-card>
 </div>
 
 </div>
+

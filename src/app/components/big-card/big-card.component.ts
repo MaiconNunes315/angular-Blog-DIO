@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+
+import { ApiNewsService } from './../../service/api-news.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -8,12 +10,20 @@ import { Component, OnInit } from '@angular/core';
 
 export class BigCardComponent implements OnInit {
 
-  constructor() { }
+news = [{title:"",description:"",publishedAt:"",url:"",urlToImage:""}]
 
-  ngOnInit(): void {
+  constructor(private ApiNewsService:ApiNewsService){
+    
   }
-
-
   
+  ngOnInit(): void {
+  this.ApiNewsService.getNews().subscribe({
+      next: (res)=>{
+      this.news = res.articles
+      },
+
+      error: (error)=>error
+   })
+  }
 
 }

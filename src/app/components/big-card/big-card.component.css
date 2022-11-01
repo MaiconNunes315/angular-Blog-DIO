@@ -12,6 +12,11 @@
     
 }
 
+.container_big-card a{
+    text-decoration:none;
+}
+
+
 .img{
     width:90%;
     
@@ -25,6 +30,7 @@
 
 .text{
     width:80%;
+    color:gray;
 }
 
 .title{
